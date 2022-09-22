@@ -340,4 +340,4 @@ ASALocalRun/
 healthchecksdb
 
 # appsettings.json
-ConnectedOffice\DeviceManagement_WebApp\appsettings.json
+/appsettings.json
