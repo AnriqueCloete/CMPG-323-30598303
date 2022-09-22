@@ -67,7 +67,7 @@ namespace DeviceManagement_WebApp
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
-                //sdjvciugvkEGVE
+          
             });
         }
     }
