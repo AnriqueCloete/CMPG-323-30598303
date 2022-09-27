@@ -26,6 +26,13 @@ namespace DeviceManagement_WebApp.Repositories
 
         bool CatExists(Guid id);
 
+        bool ZneExists(Guid id);
+
+        bool DevExists(Guid id);
+        public void Include();
+
+
+
 
     }
 }

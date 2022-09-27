@@ -6,24 +6,22 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Policy;
 using System.Threading.Tasks;
+using Zone = DeviceManagement_WebApp.Models.Zone;
 
 namespace DeviceManagement_WebApp.Repositories
 {
-    public class CategoriesRepository : GenericRepository<Category>, ICategoriesRepository
+    public class ZoneRepository : GenericRepository<Zone>, IZoneRepository
     {
-    
-        public CategoriesRepository(ConnectedOfficeContext context) : base(context)
+
+        public ZoneRepository(ConnectedOfficeContext context) : base(context)
         {
         }
-        
 
-        public Category GetMostRecentCategory()
+        public Zone GetMostRecentZone()
         {
-            return _context.Category.OrderByDescending(category => category.DateCreated).FirstOrDefault();
+            return _context.Zone.OrderByDescending(zone => zone.DateCreated).FirstOrDefault();
         }
-
-      
-
     }
 }

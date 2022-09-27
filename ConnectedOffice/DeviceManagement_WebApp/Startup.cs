@@ -1,4 +1,3 @@
-using DeviceManagement_WebApp.Controllers;
 using DeviceManagement_WebApp.Data;
 using DeviceManagement_WebApp.Repositories;
 using Microsoft.AspNetCore.Builder;
@@ -42,6 +41,8 @@ namespace DeviceManagement_WebApp
 
             services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddTransient<ICategoriesRepository, CategoriesRepository>();
+            services.AddTransient<IZoneRepository, ZoneRepository>();
+            services.AddTransient<IDevicesRepository, DevicesRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

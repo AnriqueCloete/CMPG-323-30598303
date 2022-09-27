@@ -1,5 +1,6 @@
 ﻿using DeviceManagement_WebApp.Data;
 using DeviceManagement_WebApp.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -17,16 +18,16 @@ namespace DeviceManagement_WebApp.Repositories
             _context = context;
         }
 
-        public async void Remove(T entity)
+        public void Remove(T entity)
         {
             _context.Set<T>().Remove(entity);
-            _context.SaveChangesAsync();
+            _context.SaveChanges();
         }
 
-        public async void Add(T entity)
+        public void Add(T entity)
         {
             _context.Set<T>().Add(entity);
-            _context.SaveChangesAsync();
+            _context.SaveChanges();
         }
 
         public void AddRange(IEnumerable<T> entities)
@@ -57,12 +58,27 @@ namespace DeviceManagement_WebApp.Repositories
         public void Update(T entity)
         {
             _context.Update(entity);
-            _context.SaveChangesAsync();
+            _context.SaveChanges();
         }
 
         public bool CatExists(Guid id)
         {
             return _context.Category.Any(e => e.CategoryId == id);
+        }
+
+        public bool ZneExists(Guid id)
+        {
+            return _context.Zone.Any(e => e.ZoneId == id);
+        }
+
+        public bool DevExists(Guid id)
+        {
+            return _context.Device.Any(e => e.DeviceId == id);
+        }
+
+        public void Include()
+        {
+            _context.Device.Include(d => d.Category).Include(d => d.Zone);
         }
     }
 }
