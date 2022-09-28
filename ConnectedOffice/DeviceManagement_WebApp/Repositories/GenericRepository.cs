@@ -20,6 +20,9 @@ namespace DeviceManagement_WebApp.Repositories
 
         public void Remove(T entity)
         {
+            _context.Device
+                 .Include(d => d.Category)
+                 .Include(d => d.Zone);
             _context.Set<T>().Remove(entity);
             _context.SaveChanges();
         }
@@ -42,6 +45,7 @@ namespace DeviceManagement_WebApp.Repositories
 
         public IEnumerable<T> GetAll()
         {
+           
             return _context.Set<T>().ToList();
         }
 
@@ -76,9 +80,8 @@ namespace DeviceManagement_WebApp.Repositories
             return _context.Device.Any(e => e.DeviceId == id);
         }
 
-        public void Include()
-        {
-            _context.Device.Include(d => d.Category).Include(d => d.Zone);
-        }
+
+       
+
     }
 }

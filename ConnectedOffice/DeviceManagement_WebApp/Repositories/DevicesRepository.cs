@@ -15,5 +15,10 @@ namespace DeviceManagement_WebApp.Repositories
         public DevicesRepository(ConnectedOfficeContext context) : base(context)
         {
         }
+
+        public IEnumerable<Device> Incld()
+        {
+            return (IEnumerable<Device>)_context.Device.Include(d => d.Category).Include(d => d.Zone);
+        }
     }
 }

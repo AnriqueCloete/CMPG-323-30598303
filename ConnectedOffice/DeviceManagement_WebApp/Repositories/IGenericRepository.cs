@@ -29,10 +29,7 @@ namespace DeviceManagement_WebApp.Repositories
         bool ZneExists(Guid id);
 
         bool DevExists(Guid id);
-        public void Include();
 
-
-
-
+       
     }
 }
