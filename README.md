@@ -41,9 +41,9 @@ In order to view and edit data you need to register an account and login.
 If you already have an ccount you can just sign in.
 Here is a screen recording of how this app works after it has been published and hosted on Azure:
 
-Here is the link to the site as well: https://30598303devicemanagementwebapp20220928150954.azurewebsites.net
-
 [Home Page - Connected Office_ Device Management - Google Chrome 2022-09-29 09-02-56.zip](https://github.com/AnriqueCloete/CMPG-323-Project-3-30598303/files/9671948/Home.Page.-.Connected.Office_.Device.Management.-.Google.Chrome.2022-09-29.09-02-56.zip)
+
+Here is the link to the site as well: https://30598303devicemanagementwebapp20220928150954.azurewebsites.net
 
 Important Note: 
 The effort (in hours) I spent on training is 2 hours per day for the entire sprint (thus it is 14 hours per week and 24 hours per sprint)  
