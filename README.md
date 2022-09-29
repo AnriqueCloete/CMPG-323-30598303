@@ -55,5 +55,9 @@ I have added collaborators to project and I am just waiitng for their response:
 
 ![CMPG 323 - Project 3 - Submission - Google Chrome 2022_09_29 09_47_49](https://user-images.githubusercontent.com/110592885/192972013-ccece08a-6933-45c9-8c21-30a897603967.png)
 
+I cannot change the visibility of a forked repository thus my repository is Public.
+I hope this will not affect my marks:
+
+![Manage access - Google Chrome 2022_09_29 09_48_51](https://user-images.githubusercontent.com/110592885/192972502-38ef4e91-1e30-49ba-9792-f47c79f4d3ca.png)
 
 
