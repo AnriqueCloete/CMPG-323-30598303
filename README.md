@@ -53,4 +53,7 @@ I have added collaborators to project and I am just waiitng for their response:
 
 ![Manage access - Google Chrome 2022_09_29 09_39_11](https://user-images.githubusercontent.com/110592885/192970302-e7615eb8-e7b3-4eae-8e37-f43f738eac93.png)
 
+![CMPG 323 - Project 3 - Submission - Google Chrome 2022_09_29 09_47_49](https://user-images.githubusercontent.com/110592885/192972013-ccece08a-6933-45c9-8c21-30a897603967.png)
+
+
 
