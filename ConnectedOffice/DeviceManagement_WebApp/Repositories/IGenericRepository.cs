@@ -8,6 +8,8 @@ namespace DeviceManagement_WebApp.Repositories
 {
     public interface IGenericRepository<T> where T : class
     {
+        //This interface class contains all methods used throught all controllers
+        //the implementation of these methods are contained in the GenericRepository class
         T GetById(Guid? id);
 
         IEnumerable<T> GetAll();

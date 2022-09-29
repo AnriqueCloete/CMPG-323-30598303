@@ -28,6 +28,7 @@ namespace DeviceManagement_WebApp.Controllers
         }
 
         //GET: Zones/Details/5
+        //Open the details window in browser to view specific data item
         public async Task<IActionResult> Details(Guid? id)
         {
             if (id == null)
@@ -45,6 +46,7 @@ namespace DeviceManagement_WebApp.Controllers
         }
 
         // GET: Zones/Create
+        //Open a new window in the browser to add data for a new record
         public IActionResult Create()
         {
             return View();
@@ -53,6 +55,7 @@ namespace DeviceManagement_WebApp.Controllers
         // POST: Zones/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        //Create a new record and add it to the database
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ZoneId,ZoneName,ZoneDescription,DateCreated")] Zone zone)
@@ -63,6 +66,7 @@ namespace DeviceManagement_WebApp.Controllers
         }
 
         // GET: Zones/Edit/5
+        //Open a new window in the browser where you can see all details that you can edit about a specific record
         public async Task<IActionResult> Edit(Guid? id)
         {
             if (id == null)
@@ -81,6 +85,7 @@ namespace DeviceManagement_WebApp.Controllers
         // POST: Zones/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        //Save the changes and update the database and record with the changes made
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(Guid id, [Bind("ZoneId,ZoneName,ZoneDescription,DateCreated")] Zone zone)
@@ -110,6 +115,7 @@ namespace DeviceManagement_WebApp.Controllers
         }
 
         // GET: Zones/Delete/5
+        //Open a new window in the browser to see the selected item and to confirm the deletion of that item
         public async Task<IActionResult> Delete(Guid? id)
         {
             if (id == null)
@@ -127,6 +133,7 @@ namespace DeviceManagement_WebApp.Controllers
         }
 
         // POST: Zones/Delete/5
+        //After confirming the deletion remove the record from the database and save the changes
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)
@@ -136,6 +143,7 @@ namespace DeviceManagement_WebApp.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        //This method checks to see if a specific record exists in the database and return true if it does exist and false if it does not exist
         private bool ZoneExists(Guid id)
         {
             return _zoneRepository.ZneExists(id);

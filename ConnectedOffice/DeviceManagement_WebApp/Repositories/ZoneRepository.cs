@@ -14,7 +14,8 @@ namespace DeviceManagement_WebApp.Repositories
 {
     public class ZoneRepository : GenericRepository<Zone>, IZoneRepository
     {
-
+        //This class contains the implementation of the method in the IZoneRepository interface class
+        //This class inherits from the IZoneRepository interface class and the GenericRepository class
         public ZoneRepository(ConnectedOfficeContext context) : base(context)
         {
         }

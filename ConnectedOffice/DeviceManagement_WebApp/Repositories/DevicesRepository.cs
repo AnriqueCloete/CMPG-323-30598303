@@ -11,7 +11,8 @@ namespace DeviceManagement_WebApp.Repositories
 {
     public class DevicesRepository : GenericRepository<Device>, IDevicesRepository
     {
-
+        //This class contains the implementation of the method in the IDevicesRepository interface class
+        //This class inherits from the IDevicesRepository interface class and the GenericRepository class
         public DevicesRepository(ConnectedOfficeContext context) : base(context)
         {
         }

@@ -11,6 +11,9 @@ namespace DeviceManagement_WebApp.Repositories
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
+        //This class contains the implementation of the methods in the IGenericRepository interface class
+        //This is the only place where the DBContext is accessed directly, in order to promote loose coupling of code
+        //This class inherits from the IgenericRepository interface class
         protected readonly ConnectedOfficeContext _context;
 
         public GenericRepository(ConnectedOfficeContext context)
