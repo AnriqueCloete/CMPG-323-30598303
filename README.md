@@ -46,5 +46,5 @@ Here is a screen recording of how this app works after it has been published and
 
 [Home Page - Connected Office_ Device Management - Google Chrome 2022-09-29 09-02-56.zip](https://github.com/AnriqueCloete/CMPG-323-Project-3-30598303/files/9671948/Home.Page.-.Connected.Office_.Device.Management.-.Google.Chrome.2022-09-29.09-02-56.zip)
 
-
+Important Note: The effort (in hours) I spent on training is 2 hours per day for the entire sprint (thus it is 14 hours per week and 24 hours per sprint)  
 
