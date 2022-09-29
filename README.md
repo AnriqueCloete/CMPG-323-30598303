@@ -40,7 +40,7 @@ This web app will be used to view and maintain the ConnectedOffice Database (upd
 In order to view and edit data you need to register an account and login.
 If you already have an ccount you can just sign in.
 This is the home page:
-
+![alt text](https://github.com/AnriqueCloete/CMPG-323-Project-3-30598303/blob/main/README.md)
 
 
 
